@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= movie.Title %></title>
+    <link rel="icon" href="./image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-black text-center text-white">
+<header>
+  <div class="mb-4 text-white bg-red-600"> 
+    <img class="rounded-full inline w-11 mr-4" src="./image/logo.jpg" alt="logo">
+    <h1 class="inline ">MOVIE🎬 GOOGLE</h1>
+</div>
+</header>
+
+<div class="text-center">
+    <!-- views/movie.ejs -->
+
+  
+   <h1> <img class="mx-auto rounded-lg shadow-lg" src="<%= movie.Poster %>" alt="Poster for <%= movie.Title %>"></h1>
+
+  <h1><%= movie.Title %> (Released in <%= movie.Year %>)</h1>
+  <p><strong>Rated:</strong> <%= movie.Rated %></p>
+  <p><strong>Released:</strong> <%= movie.Released %></p>
+  <p><strong>Runtime:</strong> <%= movie.Runtime %></p>
+  <p><strong>Genre:</strong> <%= movie.Genre %></p>
+  <p><strong>Director:</strong> <%= movie.Director %></p>
+  <p><strong>Actors:</strong> <%= movie.Actors %></p>
+  <p><strong>Plot:</strong> <%= movie.Plot %></p>
+  <p><strong>IMDB Rating:</strong> <%= movie.imdbRating %></p>
+
+
+</div><br>
+<br><hr><br>
+<form action="/movie" method="post" class="text-white">
+
+    <label for="title">movie title</label> 
+    <input type="text" name="title" placeholder="title" class="text-black"><br>
+    <label for="date">movie year</label>
+    <input type="text" name="date" placeholder="date" class="m-2 text-black"> <br>
+    <button type="submit" class="bg-red-400 rounded-full px-2">Search🔎</button>
+</form>
+
+<br>
+<p class="text-center text-gray-500 text-xs mt-4">
+    &copy;2024 Grace Tech. All rights reserved.
+</p>
+</body></html>
+
+
+
+

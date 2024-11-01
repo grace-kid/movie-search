@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie information</title>
+    <link rel="icon" href="./image/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-black text-center text-white">
+<header>
+  <div class="mb-4 text-white bg-red-600"> 
+    <img class="rounded-full inline w-11 mr-4" src="./image/logo.jpg" alt="logo">
+    <h1 class="inline ">MOVIE🎬 GOOGLE</h1>
+</div>
+<div>
+    <h2 class="text-white mb-4"> 🔍Search you'r fevorite movie🎥🔎</h2>
+</div>
+</header>
+
+    <form action="/movie" method="post" class="text-white">
+        <label for="title">movie title</label> 
+        <input type="text" name="title" placeholder="title" class="text-black"><br>
+        <label for="date">movie year</label>
+        <input type="text" name="date" placeholder="date" class="m-2 text-black"> <br>
+        <button type="submit" class="bg-red-400 rounded-full px-2">Search🔎</button>
+    </form>
+    
+    <p class="text-center text-gray-500 text-xs mt-4 ">
+        &copy;2024 Grace Tech. All rights reserved.
+    </p>
+   
+</html>
